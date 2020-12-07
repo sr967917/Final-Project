@@ -1,0 +1,273 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+    font-family: 'Verdana', 'Arial' sans-serif;
+}
+
+/* nav below */
+button.position-absolute {
+    right:1rem;
+    top:1rem;
+    z-index:1;
+}
+nav {
+    background-color: #3F909E;
+    box-shadow: 0px 1px 20px 1px grey;
+    z-index: 1;
+}
+.navbar-brand {
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 28pt;
+    font-weight: 450;
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-link {
+    color: white;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 0px 6px;
+}
+.nav-last {
+    border-right: none;
+}
+.nav-link:hover {
+    color: lightgray;
+}
+.active {
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px){
+    .nav-link {
+        border-right: none;
+        text-align: right;
+    }
+}
+/* end nav */
+
+/*index*/
+.infotext {
+    margin: 5vh 5vw;
+    line-height: 2;
+    text-align: justify;
+}
+.carousel-inner {
+    height: 200px;
+    width: 100%;
+}
+.index-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*margin: -20px 0 0 -20px;*/
+}
+.img-bg-home {
+    /*margin: 20px 0 0 20px;*/
+    margin: auto;
+}
+.img-bg-home:hover {
+    background-color: black;
+    position: relative;
+}
+@media screen and (max-width: 767px) {
+    .index-images {
+        margin: -20px 0 0 -20px;
+    }
+    .img-bg-home {
+        margin: 20px 0 0 20px;
+    }
+}
+/* card deck */
+.card {
+    border:none;
+}
+.card:hover {
+    background-color: black;
+    position: relative;
+}
+.card:hover img{
+    opacity: .5;
+}
+.card p {
+    display:none;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top: 40%;
+    color:white;
+}
+.card:hover p {
+    display:block;
+    cursor: pointer;
+}
+.prod-team {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+/*end card deck*/
+/*flex box images*/
+.img-container:hover {
+    background-color: black;
+    position: relative;
+    border-radius: 5px;
+}
+.img-container:hover img{
+    opacity: .5;
+}
+.img-container p {
+    display:none;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top: 40%;
+    color:white;
+}
+.img-container:hover p {
+    display:block;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #3F909E;
+    width: 100%;
+    line-height: 60px;
+    position: absolute;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 11pt;
+    cursor: default;
+}
+.contact-footer {
+    bottom: 0;
+}
+
+@media screen and (max-width:767px) {
+    footer {
+        line-height: 20px;
+        height: 60px;
+    }
+    footer p {
+        margin-top: 10px;
+    }
+}
+/*end footer*/
+
+main.contact {
+    display: flex;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*sidebar*/
+.sidebar {
+    background-color: #3F909E;
+    height: 60vh;
+    width: 205px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.links {
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.links li a {
+    color: white;
+    line-height: 40px;
+}
+.links li a.address {
+    line-height: normal;
+}
+.links li a:hover {
+    color: lightgray;
+}
+
+@media screen and (max-width:767px) {
+    main.contact {
+        display: block;
+    }
+    .sidebar {
+        width: 90vw;
+        height: 20vh;
+        margin-left: 5vw;
+    }
+    .links {
+        display: flex;
+    }
+    .links li a.address {
+        line-height: 40px;
+    }
+}
+/*end sidebar*/
+
+/*form*/
+.btn {
+    background-color: #3F909E;
+    border: none;
+}
+
+@media screen and (max-width:767px) {
+    .btn {
+        margin-bottom: 20px;
+    }
+}
+/*end form*/
+
+/*spotlight*/
+h2.center {
+    text-align: center;
+}
+h2.left {
+    margin: 10px 5vw;
+}
+.spotlight-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -20px 0 0 -40px;
+    background-color: 
+}
+.img-background {
+    margin: 20px 0 0 40px;
+}
+.img-background:hover {
+    background-color: black;
+    position: relative;
+}
+.img-a:hover img {
+    opacity: .5;
+    background-color: black;
+}
+.img-a p {
+    display:none;
+}
+.img-a:hover p {
+    display:block;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top: 50%;
+    color:white;
+}
+.spotlight-images img {
+    height: 30vw;
+    box-shadow: 0px 4px 20px 0px #888;
+}
+.video-embed {
+    width: 95%;
+    margin: 0 2.5% 0;
+    height: 50vw;
+}
