@@ -1,0 +1,183 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+/* nav below */
+button.position-absolute {
+    right:1rem;
+    top:1rem;
+    z-index:1;
+}
+
+nav {
+    background-color: #3F909E;
+}
+.navbar-brand {
+    color: black;
+    font-size: 28pt;
+    font-weight: 450;
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-link {
+    color: white;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 0px 6px;
+}
+.nav-last {
+    border-right: none;
+}
+.nav-link:hover {
+    color: lightgray;
+}
+.active {
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px){
+    .nav-link {
+        border-right: none;
+    }
+}
+/* end nav */
+
+/* unused img links
+
+ul.img-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.img-links li {
+    height: 30vh;
+    flex-grow: 1;
+    list-style: none;
+}
+
+ul.img-links li:last-child {
+    flex-grow: 10;
+}
+
+ul.img-links li img {
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+*/
+
+.card {
+    border:none;
+}
+
+.card:hover {
+    background-color: black;
+    position: relative;
+}
+.card:hover img{
+    opacity: .5;
+}
+.card p {
+    display:none;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top: 40%;
+    color:white;
+}
+.card:hover p {
+    display:block;
+    cursor: pointer;
+}
+.card p:hover {
+    
+}
+
+/* code from class*/
+.img_background:hover {
+    background-color: black;
+    position: relative;
+}
+.hover:hover img {
+    opacity: .5;
+    background-color: black;
+}
+.hover p {
+    display:none;
+}
+.hover:hover p {
+    display:block;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top: 50%;
+    color:white;
+}
+/*end code from class*/
+
+/* footer */
+footer {
+    background-color: #3F909E;
+    width: 100%;
+    line-height: 60px;
+    position: absolute;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+}
+
+/*end footer*/
+
+main.contact {
+    display: flex;
+}
+
+/*sidebar*/
+.sidebar {
+    background-color: #3F909E;
+    height: 80vh;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.links {
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+.links li a {
+    color: white;
+}
+.links li a:hover {
+    color: lightgray;
+}
+/*end sidebar*/
+
+/*form*/
+form div {
+    padding-left: 1em;
+}
+
+form div p{
+    margin-top: 5px;
+}
+
+form div span.formText {
+    display: ;
+    width: 100px;
+}
+
+form div textarea {
+    width: 200px;
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
