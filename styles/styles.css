@@ -140,16 +140,14 @@ footer {
     background-color: #3F909E;
     width: 100%;
     line-height: 60px;
-    position: absolute;
+    position: static;
+    bottom: 0;
 }
 footer p {
     color: white;
     text-align: center;
     font-size: 11pt;
     cursor: default;
-}
-.contact-footer {
-    bottom: 0;
 }
 
 @media screen and (max-width:767px) {
