@@ -56,6 +56,7 @@ nav {
     margin: 5vh 5vw;
     line-height: 2;
     text-align: justify;
+    z-index: 1;
 }
 .carousel-inner {
     height: 200px;
@@ -140,14 +141,16 @@ footer {
     background-color: #3F909E;
     width: 100%;
     line-height: 60px;
-    position: static;
-    bottom: 0;
+    position: absolute;
 }
 footer p {
     color: white;
     text-align: center;
     font-size: 11pt;
     cursor: default;
+}
+.contact-footer {
+    bottom: 0;
 }
 
 @media screen and (max-width:767px) {
