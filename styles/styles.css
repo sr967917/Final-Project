@@ -278,7 +278,6 @@ h2.left {
     }
     .img-a:hover img {
         opacity: .5;
-        background-color: black;
     }
     .img-a p {
         display:none;
@@ -303,9 +302,16 @@ h2.left {
 .video {
     height: 50vw;
     box-shadow: 0px 4px 20px 0px #888;
+    cursor: pointer;
+}
+.video-background:hover {
+    background-color: black;
+}
+.video:hover img{
+    opacity: .5;
 }
 @media screen and (min-width: 767px){
-    .video{
+    .video {
         height: 45vw;
     }
 }
