@@ -4,7 +4,7 @@ html {
 }
 body {
     margin-bottom: 60px;
-    font-family: 'Verdana', 'Arial' sans-serif;
+    font-family: 'Verdana', 'Arial', sans-serif;
 }
 
 /* nav below */
@@ -22,7 +22,6 @@ nav {
     color: black;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 28pt;
-    font-weight: 450;
 }
 .navbar-brand:hover {
     color: black;
@@ -53,7 +52,6 @@ li.active {
 
 /*slideshow*/
 .carousel-caption {
-    display: absolute;
     top: 0;
     min-height: 200px;
 }
@@ -193,14 +191,14 @@ h1 {
     text-align: center;
     padding-top: 10px;
 }
-.links li a {
+.links a {
     color: white;
     line-height: 40px;
 }
-.links li a.address {
+.links a.address {
     line-height: normal;
 }
-.links li a:hover {
+.links a:hover {
     color: lightgray;
 }
 
@@ -215,12 +213,12 @@ h1 {
     .links {
         display: flex;
     }
-    .links li a.address {
+    .links a.address {
         line-height: 40px;
     }
 }
 @media screen and (max-width: 447px) {
-    .links li a.address {
+    .links a.address {
         line-height: 30px;
     }
 }
