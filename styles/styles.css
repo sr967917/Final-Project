@@ -279,6 +279,7 @@ h2.left {
     }
     .img-a p {
         display:none;
+        margin-top: 0;
     }
     .img-a:hover p {
         display:block;
